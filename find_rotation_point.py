@@ -23,9 +23,9 @@ nums = list(range(1, 101))
 rotation_point_index = 77
 nums = nums[rotation_point_index:] + nums[:rotation_point_index]
 
-print("\n The list of numbers with a rotation point is as follows \n")
+print("\n Listen med tal, som har et rotationspunkt ser således ud\n")
 print(nums, "\n")
 
 rotation_point = find_rotation_point(nums)
 
-print("Rotation point is at index:", rotation_point, "\n")
+print("Rotationspunktet er på index:", rotation_point, "\n")
