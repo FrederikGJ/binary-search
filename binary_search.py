@@ -7,15 +7,15 @@ def binary_search(bogstaver, low, high, i):
 
         # If index is equal to the mid
         if mid == i:
-            return bogstaver[mid]
+            return list[mid]
 
         # If index is greater, ignore left half
         elif mid < i:
-            return binary_search(bogstaver, mid + 1, high, i)
+            return binary_search(list, mid + 1, high, i)
 
         # If index is smaller, ignore right half
         else:
-            return binary_search(bogstaver, low, mid - 1, i)
+            return binary_search(list, low, mid - 1, i)
 
     else:
         # Element is not present in the array
